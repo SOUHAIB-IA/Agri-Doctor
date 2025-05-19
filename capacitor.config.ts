@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'ionic.agridoctor',
-  appName: 'agridoctor',
+  appId: 'io.ionic.starter',
+  appName: 'ionic-app-base',
   webDir: 'dist'
 };
 
