@@ -28,7 +28,7 @@ const DiagnosisScreen: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar style={{ '--background': 'white' }}>
+        <IonToolbar style={{ '--background': 'white' , '--padding-top': 'var(--ion-safe-area-top, 0) + 16px'}}>
           <IonButtons slot="start">
             <IonBackButton defaultHref="/home" />
           </IonButtons>
