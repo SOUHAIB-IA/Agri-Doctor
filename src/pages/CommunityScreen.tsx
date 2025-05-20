@@ -53,7 +53,7 @@ const CommunityScreen: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar style={{ '--background': 'white' , '--padding-top': 'var(--ion-safe-area-top, 0) + 16px'}}>
+        <IonToolbar style={{ '--background': 'white' ,'padding-top': 'calc(var(--ion-safe-area-top) + 16px)'}}>
           <IonTitle className="text-primary font-bold">Community</IonTitle>
         </IonToolbar>
       </IonHeader>

@@ -96,7 +96,7 @@ const HomeScreen: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-emerald-200 to-transparent rounded-full filter blur-3xl opacity-20 translate-y-20 -translate-x-20 z-0"></div>
 
       <IonHeader className="ion-no-border">
-        <IonToolbar className="bg-transparent">
+        <IonToolbar className="bg-transparent" style={{ paddingTop: "calc(var(--ion-safe-area-top) + 16px)" }}>
           <div className="px-4 pt-safe pt-6 pb-2 flex items-center">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
