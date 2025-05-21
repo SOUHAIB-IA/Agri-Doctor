@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "380616313043",
+    "project_id": "agriapp-455921",
+    "storage_bucket": "agriapp-455921.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380616313043:android:eff4cf7339b8f28939ec26",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380616313043-r5td0lbf0ecsbd6984ve3vhro1ftm59g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.ionic.starter",
+            "certificate_hash": "00a26a5d5bf5d4b7b7b7637816d20a16212c1bf3"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDNHeITuomSR033ib0n_ogJc_GeiLDt7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

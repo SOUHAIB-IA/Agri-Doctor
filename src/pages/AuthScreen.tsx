@@ -1,14 +1,30 @@
-import React from 'react';
+import React,{useState } from 'react';
 import { IonPage, IonContent, IonButton } from '@ionic/react';
 import { useHistory } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import authService from '../services/auth.service';
 
 const AuthScreen: React.FC = () => {
   const history = useHistory();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleGoogleSignIn = () => {
-    // Handle Google sign in logic here
-    history.push('/home');
+  const handleGoogleSignIn = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      // Use the auth service instead of direct implementation
+      await authService.loginWithGoogle();
+      
+      // Redirect to home page
+      history.push('/home');
+    } catch (err) {
+      console.error('Authentication failed', err);
+      setError('Authentication failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
